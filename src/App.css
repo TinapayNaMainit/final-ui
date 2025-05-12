@@ -1,0 +1,14 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef0f3;
+}
+
+.app-container {
+  padding-bottom: 2rem;
+}
+
+button {
+  font-family: inherit;
+}

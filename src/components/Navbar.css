@@ -1,0 +1,28 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20232a;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-buttons button {
+  margin-left: 1rem;
+  background-color: #61dafb;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navbar-buttons button:hover {
+  background-color: #21a1f1;
+}
