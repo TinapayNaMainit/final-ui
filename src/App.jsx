@@ -8,7 +8,8 @@ import PostList from "./components/PostList";
 import AboutPage from "./components/AboutPage";
 import "./App.css";
 
-const baseURL = import.meta.env.VITE_API_URL;
+// ✅ Properly defined API_URL from environment
+const API_URL = `${import.meta.env.VITE_API_URL}/api/posts`;
 
 function App() {
   const [posts, setPosts] = useState([]);
