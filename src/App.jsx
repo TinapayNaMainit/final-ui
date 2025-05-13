@@ -8,7 +8,12 @@ import PostList from "./components/PostList";
 import AboutPage from "./components/AboutPage";
 import "./App.css";
 
-const API_URL = "http://localhost:8080/api/posts";
+const baseURL = import.meta.env.VITE_API_URL;
+
+axios.post(`${baseURL}/api/posts`, postData)
+  .then(response => console.log("Post submitted!", response))
+  .catch(error => console.error("Error submitting post:", error));
+
 
 function App() {
   const [posts, setPosts] = useState([]);
