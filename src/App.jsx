@@ -10,11 +10,6 @@ import "./App.css";
 
 const baseURL = import.meta.env.VITE_API_URL;
 
-axios.post(`${baseURL}/api/posts`, postData)
-  .then(response => console.log("Post submitted!", response))
-  .catch(error => console.error("Error submitting post:", error));
-
-
 function App() {
   const [posts, setPosts] = useState([]);
   const [form, setForm] = useState({
